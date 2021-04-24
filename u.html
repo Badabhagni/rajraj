@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Badabhagni</h1>
+  <div id="yes">
+   <a href="#" id="op" onclick="bo()">&#9870;</a> 
+  </div>
+  <div  id="no">
+    <a id="yi" onclick='go()' href="#">×</a>
+    <a href="#">inspiration</a><br>
+    <hr />
+    <a href="#">photographs</a><br>  <hr />
+    <a href="#">details</a><br>  <hr />
+  </div>
+  <style type="text/css" media="all">
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    h1{
+      position: absolute;
+      top: 2%;left: 50%;
+      transform: translate(-50%,-2%);
+      font-size: 60px;
+      color: rgb(249,85,185);
+      text-align: center;
+       font-family: 'Pacifico', cursive;
+    }
+    #op{
+      font-size: 40px;
+      color: #70e0fd;
+      padding: 0;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin: 0;
+    }
+    #yi{
+      font-size: 50px;
+      color: #ff3030e8;
+      text-align: left;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    a{
+      color:white;
+      font-size: 30px;
+      margin: 50px;
+      text-decoration: none;
+      text-align: center;
+      border: 0;
+    }
+    #yes{
+      border: 1px solid black;
+      position: absolute;
+      top: 2%;right: 2%;
+    }
+    #no{
+      transition: ease;
+      position: absolute;
+      top: 2%;right: 2%;
+      display: none;
+      height: 0;
+      width:0;
+      background-color: rgba(169,169,169,0.729);
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+    p{
+      text-align: center;
+      
+    }
+  </style>
+  <script type="text/javascript" charset="utf-8">
+    function bo(){
+      document.getElementById('yes').style.display = 'none';
+      document.getElementById('no').style.display = 'block';
+      document.getElementById('no').style.height = 600+'px';
+      document.getElementById('no').style.width = 250+'px';
+    }
+    function go(){
+      document.getElementById('yes').style.display = 'block';
+      document.getElementById('no').style.display = 'none';
+      document.getElementById('no').style.height = 0;
+      document.getElementById('no').style.width = 0;
+    }
+  </script>
+</body>
+</html>
